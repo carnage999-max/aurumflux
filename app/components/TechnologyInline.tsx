@@ -138,38 +138,6 @@ export default function Technology() {
                 </div>
               </div>
             ))}
-
-            {/* CTA Button */}
-            <div style={{ paddingTop: '1.5rem' }}>
-              <a
-                href="#"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  background: '#C39340',
-                  color: 'white',
-                  padding: '0.75rem 1.5rem',
-                  borderRadius: '9999px',
-                  fontWeight: '600',
-                  boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-                  textDecoration: 'none',
-                  transition: 'all 0.3s'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#b38736';
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#C39340';
-                  e.currentTarget.style.transform = 'scale(1)';
-                }}
-              >
-                See the Full System Patent
-                <svg style={{ width: '20px', height: '20px', marginLeft: '0.5rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
       </div>

@@ -128,7 +128,7 @@ export default function MarketPotential() {
             <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>Tons of Gold in Oceans</p>
           </div>
           <div style={{ background: 'linear-gradient(to bottom right, #C39340, #b38736)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-            <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: 'white', marginBottom: '0.5rem' }}>$1.3T</p>
+            <p style={{ fontSize: '2.25rem', fontWeight: 'bold', color: 'white', marginBottom: '0.5rem' }}>$1.3Quadrillion</p>
             <p style={{ color: 'rgba(255, 255, 255, 0.9)' }}>Total Market Value</p>
           </div>
           <div style={{ background: 'linear-gradient(to bottom right, #C39340, #b38736)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>

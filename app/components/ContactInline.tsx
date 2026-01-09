@@ -48,8 +48,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ fontSize: '0.875rem', color: '#9ca3af', marginBottom: '0.25rem' }}>Email</p>
-                    <a href="mailto:aurum@fluxventures.com" style={{ color: 'white', fontSize: '1.125rem', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
-                      aurum@fluxventures.com
+                    <a href="mailto:info@aurumfluxocean.com" style={{ color: 'white', fontSize: '1.125rem', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = 'white'}>
+                      info@aurumfluxocean.com
                     </a>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p style={{ fontSize: '0.875rem', color: '#9ca3af', marginBottom: '0.25rem' }}>Mailing Address</p>
-                    <p style={{ color: 'white', fontSize: '1.125rem' }}>Nathan Reardon</p>
+                    <p style={{ color: 'white', fontSize: '1.125rem' }}>AurumFlux Ocean</p>
                     <p style={{ color: '#d1d5db' }}>PO Box 52</p>
                     <p style={{ color: '#d1d5db' }}>Detroit, ME 04929</p>
                   </div>
@@ -239,7 +239,7 @@ export default function Contact() {
               <span style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'white' }}>AurumFlux<sup style={{ fontSize: '0.75rem' }}>®</sup></span>
             </div>
             <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-              © 2025{new Date().getFullYear() > 2025 ? ` - ${new Date().getFullYear()}` : ''} AurumFlux. All rights reserved.
+              © 2025{new Date().getFullYear() > 2025 ? ` - ${new Date().getFullYear()}` : ''} AurumFlux Ocean. All rights reserved.
             </p>
             <div style={{ display: 'flex', gap: '1rem' }}>
               <a href="#" style={{ color: '#9ca3af', fontSize: '0.875rem', textDecoration: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}>

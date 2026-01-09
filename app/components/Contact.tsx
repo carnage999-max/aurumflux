@@ -48,8 +48,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400 mb-1">Email</p>
-                    <a href="mailto:aurum@fluxventures.com" className="text-white hover:text-[#C39340] transition-colors text-lg">
-                      aurum@fluxventures.com
+                    <a href="mailto:info@aurumfluxocean.com" className="text-white hover:text-[#C39340] transition-colors text-lg">
+                      info@aurumfluxocean.com
                     </a>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-400 mb-1">Mailing Address</p>
-                    <p className="text-white text-lg">Nathan Reardon</p>
+                    <p className="text-white text-lg">AurumFlux Ocean</p>
                     <p className="text-gray-300">PO Box 52</p>
                     <p className="text-gray-300">Detroit, ME 04929</p>
                   </div>
@@ -226,10 +226,10 @@ export default function Contact() {
               <div className="w-10 h-10 bg-[#C39340] rounded-full flex items-center justify-center">
                 <span className="text-[#1F242B] font-bold text-xl">A</span>
               </div>
-              <span className="text-xl font-bold text-white">AurumFlux<sup className="text-xs">®</sup></span>
+              <span className="text-xl font-bold text-white">AurumFlux Ocean<sup className="text-xs">®</sup></span>
             </div>
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} AurumFlux. All rights reserved.
+              © {new Date().getFullYear()} AurumFlux Ocean . All rights reserved.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-[#C39340] transition-colors">
