@@ -37,7 +37,7 @@ export default function Security() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>
             Anti-Theft and Collision Avoidance
           </h2>
-          <div style={{ width: '96px', height: '4px', background: '#C39340', margin: '0 auto' }}></div>
+          <div style={{ width: '96px', height: '4px', background: '#e6b84f', margin: '0 auto' }}></div>
         </div>
 
         {/* Security Features Grid */}
@@ -45,12 +45,12 @@ export default function Security() {
           {securityFeatures.map((feature, index) => (
             <div
               key={index}
-              style={{ background: '#284155', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)', transition: 'all 0.3s', borderLeft: '4px solid #C39340' }}
+              style={{ background: '#284155', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)', transition: 'all 0.3s', borderLeft: '4px solid #e6b84f' }}
               onMouseEnter={(e) => { e.currentTarget.style.boxShadow = '0 25px 50px -12px rgba(0, 0, 0, 0.5)'; e.currentTarget.style.transform = 'scale(1.05)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.3)'; e.currentTarget.style.transform = 'scale(1)'; }}
             >
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-                <div style={{ background: '#C39340', borderRadius: '8px', padding: '0.75rem', flexShrink: 0 }}>
+                <div style={{ background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', borderRadius: '8px', padding: '0.75rem', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 -2px 3px rgba(0, 0, 0, 0.3)', border: '2px solid #b8860b', flexShrink: 0 }}>
                   <svg style={{ width: '32px', height: '32px', color: 'white' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {feature.icon}
                   </svg>
@@ -66,12 +66,12 @@ export default function Security() {
 
         {/* Security Visualization */}
         <div style={{ background: '#284155', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', marginBottom: '2rem' }}>
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#C39340', marginBottom: '1.5rem', textAlign: 'center' }}>Multi-Layer Security Protocol</h3>
+          <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1.5rem', textAlign: 'center' }}>Multi-Layer Security Protocol</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
             {/* Layer 1 */}
             <div style={{ textAlign: 'center' }}>
               <div style={{ background: '#0D2F44', borderRadius: '50%', width: '96px', height: '96px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
-                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#C39340' }}>1</span>
+                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#e6b84f' }}>1</span>
               </div>
               <h4 style={{ fontSize: '1.125rem', fontWeight: '600', color: 'white', marginBottom: '0.5rem' }}>Detection</h4>
               <p style={{ fontSize: '0.875rem', color: '#d1d5db' }}>
@@ -82,7 +82,7 @@ export default function Security() {
             {/* Layer 2 */}
             <div style={{ textAlign: 'center' }}>
               <div style={{ background: '#0D2F44', borderRadius: '50%', width: '96px', height: '96px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
-                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#C39340' }}>2</span>
+                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#e6b84f' }}>2</span>
               </div>
               <h4 style={{ fontSize: '1.125rem', fontWeight: '600', color: 'white', marginBottom: '0.5rem' }}>Alert</h4>
               <p style={{ fontSize: '0.875rem', color: '#d1d5db' }}>
@@ -93,7 +93,7 @@ export default function Security() {
             {/* Layer 3 */}
             <div style={{ textAlign: 'center' }}>
               <div style={{ background: '#0D2F44', borderRadius: '50%', width: '96px', height: '96px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1rem' }}>
-                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#C39340' }}>3</span>
+                <span style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#e6b84f' }}>3</span>
               </div>
               <h4 style={{ fontSize: '1.125rem', fontWeight: '600', color: 'white', marginBottom: '0.5rem' }}>Response</h4>
               <p style={{ fontSize: '0.875rem', color: '#d1d5db' }}>
@@ -114,9 +114,9 @@ export default function Security() {
         <div style={{ textAlign: 'center' }}>
           <a
             href="#"
-            style={{ display: 'inline-flex', alignItems: 'center', background: '#C39340', color: 'white', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '600', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', textDecoration: 'none', transition: 'all 0.3s' }}
-            onMouseEnter={(e) => { e.currentTarget.style.background = '#b38736'; e.currentTarget.style.transform = 'scale(1.05)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = '#C39340'; e.currentTarget.style.transform = 'scale(1)'; }}
+            style={{ display: 'inline-flex', alignItems: 'center', background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', color: '#0b1a2d', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '700', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)', textDecoration: 'none', transition: 'all 0.3s ease' }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.filter = 'brightness(1.05)'; }}
+            onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(1)'; }}
           >
             View Full Security Protocol
             <svg style={{ width: '20px', height: '20px', marginLeft: '0.5rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -51,13 +51,13 @@ export default function ROICalculator() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>
             Investor ROI & Revenue Tool
           </h2>
-          <div style={{ width: '96px', height: '4px', background: '#C39340', margin: '0 auto' }}></div>
+          <div style={{ width: '96px', height: '4px', background: '#e6b84f', margin: '0 auto' }}></div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', alignItems: 'start' }}>
           {/* Calculator Inputs */}
           <div style={{ background: '#284155', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#C39340', marginBottom: '1.5rem' }}>Calculate Your Returns</h3>
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1.5rem' }}>Calculate Your Returns</h3>
 
             {/* Unit Cost */}
             <div style={{ marginBottom: '1.5rem' }}>
@@ -69,7 +69,7 @@ export default function ROICalculator() {
                 value={unitCost}
                 onChange={(e) => setUnitCost(Number(e.target.value))}
                 style={{ width: '100%', background: '#0D2F44', color: 'white', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', outline: 'none' }}
-                onFocus={(e) => e.currentTarget.style.outline = '2px solid #C39340'}
+                onFocus={(e) => e.currentTarget.style.outline = '2px solid #e6b84f'}
                 onBlur={(e) => e.currentTarget.style.outline = 'none'}
               />
               <input
@@ -79,7 +79,7 @@ export default function ROICalculator() {
                 step="50000"
                 value={unitCost}
                 onChange={(e) => setUnitCost(Number(e.target.value))}
-                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#C39340' }}
+                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#e6b84f' }}
               />
             </div>
 
@@ -93,7 +93,7 @@ export default function ROICalculator() {
                 value={concentration}
                 onChange={(e) => setConcentration(Number(e.target.value))}
                 style={{ width: '100%', background: '#0D2F44', color: 'white', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', outline: 'none' }}
-                onFocus={(e) => e.currentTarget.style.outline = '2px solid #C39340'}
+                onFocus={(e) => e.currentTarget.style.outline = '2px solid #e6b84f'}
                 onBlur={(e) => e.currentTarget.style.outline = 'none'}
               />
               <input
@@ -103,7 +103,7 @@ export default function ROICalculator() {
                 step="1"
                 value={concentration}
                 onChange={(e) => setConcentration(Number(e.target.value))}
-                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#C39340' }}
+                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#e6b84f' }}
               />
             </div>
 
@@ -117,7 +117,7 @@ export default function ROICalculator() {
                 value={deploymentDays}
                 onChange={(e) => setDeploymentDays(Number(e.target.value))}
                 style={{ width: '100%', background: '#0D2F44', color: 'white', padding: '0.75rem 1rem', borderRadius: '8px', border: 'none', outline: 'none' }}
-                onFocus={(e) => e.currentTarget.style.outline = '2px solid #C39340'}
+                onFocus={(e) => e.currentTarget.style.outline = '2px solid #e6b84f'}
                 onBlur={(e) => e.currentTarget.style.outline = 'none'}
               />
               <input
@@ -127,47 +127,47 @@ export default function ROICalculator() {
                 step="30"
                 value={deploymentDays}
                 onChange={(e) => setDeploymentDays(Number(e.target.value))}
-                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#C39340' }}
+                style={{ width: '100%', marginTop: '0.5rem', accentColor: '#e6b84f' }}
               />
             </div>
           </div>
 
           {/* Results Display */}
           <div>
-            <div style={{ background: 'linear-gradient(to bottom right, #C39340, #b38736)', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white', marginBottom: '1.5rem' }}>Projected Returns</h3>
+            <div style={{ background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', borderRadius: '16px', padding: '2rem', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', border: '2px solid #b8860b', marginBottom: '1.5rem' }}>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#0b1a2d', marginBottom: '1.5rem', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)' }}>Projected Returns</h3>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <div style={{ background: 'rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '1rem' }}>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.25rem' }}>Daily Recovery</p>
-                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white' }}>{results.dailyRecovery}g</p>
+                <div style={{ background: 'rgba(11, 26, 45, 0.15)', borderRadius: '8px', padding: '1rem', border: '1px solid rgba(11, 26, 45, 0.2)' }}>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginBottom: '0.25rem', fontWeight: '600' }}>Daily Recovery</p>
+                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3)' }}>{results.dailyRecovery}g</p>
                 </div>
 
-                <div style={{ background: 'rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '1rem' }}>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.25rem' }}>Total Gold Recovery</p>
-                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white' }}>{results.totalRecovery.toFixed(0)}g</p>
+                <div style={{ background: 'rgba(11, 26, 45, 0.15)', borderRadius: '8px', padding: '1rem', border: '1px solid rgba(11, 26, 45, 0.2)' }}>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginBottom: '0.25rem', fontWeight: '600' }}>Total Gold Recovery</p>
+                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3)' }}>{results.totalRecovery.toFixed(0)}g</p>
                 </div>
 
-                <div style={{ background: 'rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '1rem' }}>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.25rem' }}>Projected Revenue</p>
-                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white' }}>${results.revenue.toLocaleString()}</p>
+                <div style={{ background: 'rgba(11, 26, 45, 0.15)', borderRadius: '8px', padding: '1rem', border: '1px solid rgba(11, 26, 45, 0.2)' }}>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginBottom: '0.25rem', fontWeight: '600' }}>Projected Revenue</p>
+                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3)' }}>${results.revenue.toLocaleString()}</p>
                 </div>
 
-                <div style={{ background: 'rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '1rem' }}>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.25rem' }}>Breakeven Point</p>
-                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white' }}>{results.breakeven} days</p>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.7)', marginTop: '0.25rem' }}>≈ {(results.breakeven / 30).toFixed(1)} months</p>
+                <div style={{ background: 'rgba(11, 26, 45, 0.15)', borderRadius: '8px', padding: '1rem', border: '1px solid rgba(11, 26, 45, 0.2)' }}>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginBottom: '0.25rem', fontWeight: '600' }}>Breakeven Point</p>
+                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3)' }}>{results.breakeven} days</p>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginTop: '0.25rem', fontWeight: '600' }}>≈ {(results.breakeven / 30).toFixed(1)} months</p>
                 </div>
 
-                <div style={{ background: 'rgba(255, 255, 255, 0.1)', borderRadius: '8px', padding: '1rem' }}>
-                  <p style={{ fontSize: '0.875rem', color: 'rgba(255, 255, 255, 0.8)', marginBottom: '0.25rem' }}>Return on Investment</p>
-                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white' }}>{results.roi.toFixed(1)}%</p>
+                <div style={{ background: 'rgba(11, 26, 45, 0.15)', borderRadius: '8px', padding: '1rem', border: '1px solid rgba(11, 26, 45, 0.2)' }}>
+                  <p style={{ fontSize: '0.875rem', color: '#1a1a1a', marginBottom: '0.25rem', fontWeight: '600' }}>Return on Investment</p>
+                  <p style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3)' }}>{results.roi.toFixed(1)}%</p>
                 </div>
               </div>
             </div>
 
             {/* Example Display */}
-            <div style={{ background: '#284155', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid #C39340', marginBottom: '1.5rem' }}>
+            <div style={{ background: '#284155', borderRadius: '12px', padding: '1.5rem', borderLeft: '4px solid #e6b84f', marginBottom: '1.5rem' }}>
               <p style={{ color: '#d1d5db', fontSize: '0.875rem', marginBottom: '0.5rem' }}>Example Scenario:</p>
               <p style={{ color: 'white', fontWeight: '600' }}>
                 $700k unit = breakeven in 5 months at 15g/day recovery
@@ -177,9 +177,11 @@ export default function ROICalculator() {
             {/* CTA Button */}
             <button
               onClick={scrollToContact}
-              style={{ width: '100%', background: '#C39340', color: 'white', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '600', border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', transition: 'all 0.3s' }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = '#b38736'; e.currentTarget.style.transform = 'scale(1.05)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = '#C39340'; e.currentTarget.style.transform = 'scale(1)'; }}
+              style={{ width: '100%', background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', color: '#0b1a2d', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '700', border: 'none', cursor: 'pointer', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)', transition: 'all 0.3s ease' }}
+              onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.filter = 'brightness(1.05)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(1)'; }}
+              onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.98)'; e.currentTarget.style.boxShadow = 'inset 0 6px 10px rgba(0,0,0,0.4)'; }}
+              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)'; }}
             >
               Schedule a Strategy Call
             </button>

@@ -28,42 +28,42 @@ export default function MarketPotential() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Market Potential & Strategic Positioning
           </h2>
-          <div className="w-24 h-1 bg-[#C39340] mx-auto"></div>
+          <div className="w-24 h-1 bg-[#e6b84f] mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Global Gold Demand Growth */}
           <div className="bg-[#284155] rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold text-[#C39340] mb-6">Global Gold Demand Growth</h3>
+            <h3 className="text-2xl font-bold text-[#e6b84f] mb-6">Global Gold Demand Growth</h3>
             <div className="bg-[#0D2F44] rounded-xl p-6">
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <span className="text-white">2024</span>
                   <div className="flex-1 mx-4 bg-[#33546D] rounded-full h-4 relative overflow-hidden">
-                    <div className="absolute inset-y-0 left-0 bg-[#C39340] rounded-full" style={{ width: '70%' }}></div>
+                    <div className="absolute inset-y-0 left-0 bg-[#e6b84f] rounded-full" style={{ width: '70%' }}></div>
                   </div>
-                  <span className="text-[#C39340] font-semibold">4,500 tonnes</span>
+                  <span className="text-[#e6b84f] font-semibold">4,500 tonnes</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white">2025</span>
                   <div className="flex-1 mx-4 bg-[#33546D] rounded-full h-4 relative overflow-hidden">
-                    <div className="absolute inset-y-0 left-0 bg-[#C39340] rounded-full" style={{ width: '80%' }}></div>
+                    <div className="absolute inset-y-0 left-0 bg-[#e6b84f] rounded-full" style={{ width: '80%' }}></div>
                   </div>
-                  <span className="text-[#C39340] font-semibold">4,900 tonnes</span>
+                  <span className="text-[#e6b84f] font-semibold">4,900 tonnes</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white">2026</span>
                   <div className="flex-1 mx-4 bg-[#33546D] rounded-full h-4 relative overflow-hidden">
-                    <div className="absolute inset-y-0 left-0 bg-[#C39340] rounded-full" style={{ width: '90%' }}></div>
+                    <div className="absolute inset-y-0 left-0 bg-[#e6b84f] rounded-full" style={{ width: '90%' }}></div>
                   </div>
-                  <span className="text-[#C39340] font-semibold">5,300 tonnes</span>
+                  <span className="text-[#e6b84f] font-semibold">5,300 tonnes</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-white">2027</span>
                   <div className="flex-1 mx-4 bg-[#33546D] rounded-full h-4 relative overflow-hidden">
-                    <div className="absolute inset-y-0 left-0 bg-[#C39340] rounded-full" style={{ width: '100%' }}></div>
+                    <div className="absolute inset-y-0 left-0 bg-[#e6b84f] rounded-full" style={{ width: '100%' }}></div>
                   </div>
-                  <span className="text-[#C39340] font-semibold">5,800 tonnes</span>
+                  <span className="text-[#e6b84f] font-semibold">5,800 tonnes</span>
                 </div>
               </div>
               <p className="text-gray-400 text-sm mt-6 text-center">
@@ -74,12 +74,12 @@ export default function MarketPotential() {
 
           {/* Deployment Map */}
           <div className="bg-[#284155] rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold text-[#C39340] mb-6">High-Concentration Ocean Areas</h3>
+            <h3 className="text-2xl font-bold text-[#e6b84f] mb-6">High-Concentration Ocean Areas</h3>
             <div className="bg-[#0D2F44] rounded-xl p-6 mb-4">
               <div className="aspect-video bg-gradient-to-br from-[#284155] to-[#0D2F44] rounded-lg flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/images/world-map-deployment.jpg')] bg-cover bg-center opacity-50"></div>
                 <div className="relative z-10 text-center">
-                  <svg className="w-24 h-24 mx-auto text-[#C39340]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-24 h-24 mx-auto text-[#e6b84f]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <p className="text-sm text-gray-300 mt-2">Global Deployment Zones</p>
@@ -93,8 +93,8 @@ export default function MarketPotential() {
                   <div className="flex items-center space-x-3">
                     <span className="text-gray-400 text-sm">{zone.concentration}</span>
                     <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                      zone.potential === 'Very High' ? 'bg-[#C39340] text-white' :
-                      zone.potential === 'High' ? 'bg-[#C39340]/70 text-white' :
+                      zone.potential === 'Very High' ? 'bg-[#e6b84f] text-white' :
+                      zone.potential === 'High' ? 'bg-[#e6b84f]/70 text-white' :
                       'bg-[#33546D] text-gray-300'
                     }`}>
                       {zone.potential}
@@ -108,11 +108,11 @@ export default function MarketPotential() {
 
         {/* Competitive Edge */}
         <div className="bg-[#0D2F44] rounded-2xl p-8 lg:p-12 shadow-2xl">
-          <h3 className="text-3xl font-bold text-[#C39340] mb-8 text-center">Competitive Edge</h3>
+          <h3 className="text-3xl font-bold text-[#e6b84f] mb-8 text-center">Competitive Edge</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {competitiveEdges.map((edge, index) => (
               <div key={index} className="text-center">
-                <div className="bg-[#C39340] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-[#e6b84f] rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -126,15 +126,15 @@ export default function MarketPotential() {
 
         {/* Market Statistics */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div className="bg-gradient-to-br from-[#C39340] to-[#b38736] rounded-xl p-6 text-center shadow-xl">
+          <div className="bg-gradient-to-br from-[#e6b84f] to-[#d4a838] rounded-xl p-6 text-center shadow-xl">
             <p className="text-4xl font-bold text-white mb-2">20M</p>
             <p className="text-white/90">Tons of Gold in Oceans</p>
           </div>
-          <div className="bg-gradient-to-br from-[#C39340] to-[#b38736] rounded-xl p-6 text-center shadow-xl">
+          <div className="bg-gradient-to-br from-[#e6b84f] to-[#d4a838] rounded-xl p-6 text-center shadow-xl">
             <p className="text-4xl font-bold text-white mb-2">$1.3T</p>
             <p className="text-white/90">Total Market Value</p>
           </div>
-          <div className="bg-gradient-to-br from-[#C39340] to-[#b38736] rounded-xl p-6 text-center shadow-xl">
+          <div className="bg-gradient-to-br from-[#e6b84f] to-[#d4a838] rounded-xl p-6 text-center shadow-xl">
             <p className="text-4xl font-bold text-white mb-2">71%</p>
             <p className="text-white/90">Earth's Surface is Ocean</p>
           </div>

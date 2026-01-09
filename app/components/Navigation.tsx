@@ -49,31 +49,31 @@ export default function Navigation() {
 
             {/* Desktop Menu */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-              <button onClick={() => scrollToSection('technology')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('technology')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Technology
               </button>
-              <button onClick={() => scrollToSection('science')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('science')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Science
               </button>
-              <button onClick={() => scrollToSection('roi')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('roi')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 ROI Calculator
               </button>
-              <button onClick={() => scrollToSection('environmental')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('environmental')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Environmental
               </button>
-              <button onClick={() => scrollToSection('security')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('security')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Security
               </button>
-              <button onClick={() => scrollToSection('market')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('market')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Market
               </button>
-              <button onClick={() => scrollToSection('about')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#C39340'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => scrollToSection('about')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 About
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 style={{
-                  background: '#C39340',
+                  background: '#e6b84f',
                   color: 'white',
                   padding: '8px 24px',
                   borderRadius: '9999px',
@@ -82,11 +82,11 @@ export default function Navigation() {
                   transition: 'all 0.3s'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.background = '#b38736';
+                  e.currentTarget.style.background = '#d4a838';
                   e.currentTarget.style.transform = 'scale(1.05)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.background = '#C39340';
+                  e.currentTarget.style.background = '#e6b84f';
                   e.currentTarget.style.transform = 'scale(1)';
                 }}
               >

@@ -6,12 +6,12 @@ export default function About() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>
             About the Founder & Vision
           </h2>
-          <div style={{ width: '96px', height: '4px', background: '#C39340', margin: '0 auto' }}></div>
+          <div style={{ width: '96px', height: '4px', background: '#e6b84f', margin: '0 auto' }}></div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', alignItems: 'center' }}>
           {/* Founder Image/Visual */}
-          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', border: '4px solid #C39340' }}>
+          <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', border: '4px solid #e6b84f' }}>
             <div style={{ aspectRatio: '1', overflow: 'hidden' }}>
               <img src="/images/workers-deployment.png" alt="Team Deployment" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             </div>
@@ -20,7 +20,7 @@ export default function About() {
           {/* Story & Vision */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{ background: '#284155', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#C39340', marginBottom: '1rem' }}>Personal Story of Origin</h3>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1rem' }}>Personal Story of Origin</h3>
               <p style={{ color: '#d1d5db', lineHeight: '1.75', marginBottom: '1rem' }}>
                 Oceanic wealth extraction as the next gold rush.
               </p>
@@ -32,22 +32,22 @@ export default function About() {
             </div>
 
             <div style={{ background: '#284155', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#C39340', marginBottom: '1rem' }}>Track Record of Innovation</h3>
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1rem' }}>Track Record of Innovation</h3>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-                  <svg style={{ width: '24px', height: '24px', color: '#C39340', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg style={{ width: '24px', height: '24px', color: '#e6b84f', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <p style={{ color: '#d1d5db' }}>Pioneer in sustainable oceanic resource extraction technology</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-                  <svg style={{ width: '24px', height: '24px', color: '#C39340', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg style={{ width: '24px', height: '24px', color: '#e6b84f', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <p style={{ color: '#d1d5db' }}>Developer of proprietary ion-exchange gold separation systems</p>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem' }}>
-                  <svg style={{ width: '24px', height: '24px', color: '#C39340', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg style={{ width: '24px', height: '24px', color: '#e6b84f', flexShrink: 0, marginTop: '0.25rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <p style={{ color: '#d1d5db' }}>Committed to zero-impact environmental engineering</p>
@@ -56,8 +56,8 @@ export default function About() {
             </div>
 
             {/* Signature Quote */}
-            <div style={{ background: 'linear-gradient(to bottom right, #0D2F44, #284155)', borderRadius: '12px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', borderLeft: '4px solid #C39340', position: 'relative' }}>
-              <svg style={{ position: 'absolute', top: '1rem', left: '1rem', width: '48px', height: '48px', color: '#C39340', opacity: 0.2 }} fill="currentColor" viewBox="0 0 24 24">
+            <div style={{ background: 'linear-gradient(to bottom right, #0D2F44, #284155)', borderRadius: '12px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)', borderLeft: '4px solid #e6b84f', position: 'relative' }}>
+              <svg style={{ position: 'absolute', top: '1rem', left: '1rem', width: '48px', height: '48px', color: '#e6b84f', opacity: 0.2 }} fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
               <p style={{ fontSize: 'clamp(1.125rem, 2vw, 1.5rem)', color: 'white', fontWeight: '600', fontStyle: 'italic', paddingLeft: '2rem', position: 'relative', zIndex: 10 }}>
@@ -69,9 +69,9 @@ export default function About() {
         </div>
 
         {/* Mission Statement */}
-        <div style={{ marginTop: '4rem', background: '#C39340', borderRadius: '16px', padding: '3rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', textAlign: 'center' }}>
-          <h3 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>Our Mission</h3>
-          <p style={{ fontSize: '1.25rem', color: 'rgba(255, 255, 255, 0.9)', maxWidth: '64rem', margin: '0 auto', lineHeight: '1.75' }}>
+        <div style={{ marginTop: '4rem', background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', borderRadius: '16px', padding: '3rem', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', border: '2px solid #b8860b', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#0b1a2d', marginBottom: '1rem', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)' }}>Our Mission</h3>
+          <p style={{ fontSize: '1.25rem', color: '#1a1a1a', maxWidth: '64rem', margin: '0 auto', lineHeight: '1.75', fontWeight: '600' }}>
             To unlock the ocean's wealth responsibly, proving that prosperity and environmental stewardship
             are not mutually exclusive. AurumFlux<sup>®</sup> represents the future of resource extraction—sustainable,
             innovative, and limitless.

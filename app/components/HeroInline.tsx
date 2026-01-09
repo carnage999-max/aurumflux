@@ -130,7 +130,7 @@ export default function Hero() {
       }}>
         {/* Hero Image */}
         <div style={{ marginBottom: '2rem', display: 'flex', justifyContent: 'center' }}>
-          <img src="/images/aurumflux-collector-ocean.png" alt="AurumFlux Collector in Ocean" style={{ width: '100%', maxWidth: '400px', height: 'auto', objectFit: 'contain', borderRadius: '20px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)', border: '3px solid #C39340' }} />
+          <img src="/images/aurumflux-collector-ocean.png" alt="AurumFlux Collector in Ocean" style={{ width: '100%', maxWidth: '400px', height: 'auto', objectFit: 'contain', borderRadius: '20px', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)', border: '3px solid #e6b84f' }} />
         </div>
 
         <h1 style={{
@@ -145,7 +145,7 @@ export default function Hero() {
 
         <p style={{
           fontSize: 'clamp(1.25rem, 3vw, 1.875rem)',
-          color: '#C39340',
+          color: '#e6b84f',
           marginBottom: '3rem',
           maxWidth: '48rem',
           margin: '0 auto 3rem'
@@ -164,25 +164,35 @@ export default function Hero() {
           <button
             onClick={() => scrollToSection('technology')}
             style={{
-              background: '#C39340',
-              color: 'white',
+              position: 'relative',
+              background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)',
+              color: '#0b1a2d',
               padding: '1rem 2rem',
               borderRadius: '9999px',
               fontSize: '1.125rem',
-              fontWeight: '600',
+              fontWeight: '700',
               border: 'none',
               cursor: 'pointer',
-              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-              transition: 'all 0.3s',
-              minWidth: '200px'
+              boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)',
+              transition: 'all 0.3s ease',
+              minWidth: '200px',
+              textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#b38736';
-              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.transform = 'scale(1.04)';
+              e.currentTarget.style.filter = 'brightness(1.05)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#C39340';
               e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.filter = 'brightness(1)';
+            }}
+            onMouseDown={(e) => {
+              e.currentTarget.style.transform = 'scale(0.98)';
+              e.currentTarget.style.boxShadow = 'inset 0 6px 10px rgba(0,0,0,0.4)';
+            }}
+            onMouseUp={(e) => {
+              e.currentTarget.style.transform = 'scale(1.04)';
+              e.currentTarget.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)';
             }}
           >
             See How It Works
@@ -190,26 +200,31 @@ export default function Hero() {
           <button
             onClick={() => scrollToSection('contact')}
             style={{
+              position: 'relative',
               background: 'transparent',
-              color: '#C39340',
+              color: '#e6b84f',
               padding: '1rem 2rem',
               borderRadius: '9999px',
               fontSize: '1.125rem',
-              fontWeight: '600',
-              border: '2px solid #C39340',
+              fontWeight: '700',
+              border: '2px solid #e6b84f',
               cursor: 'pointer',
-              transition: 'all 0.3s',
+              transition: 'all 0.3s ease',
               minWidth: '200px'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = '#C39340';
-              e.currentTarget.style.color = 'white';
-              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.background = 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)';
+              e.currentTarget.style.color = '#0b1a2d';
+              e.currentTarget.style.transform = 'scale(1.04)';
+              e.currentTarget.style.boxShadow = '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)';
+              e.currentTarget.style.textShadow = '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'transparent';
-              e.currentTarget.style.color = '#C39340';
+              e.currentTarget.style.color = '#e6b84f';
               e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.textShadow = 'none';
             }}
           >
             Investor Portal
@@ -224,7 +239,7 @@ export default function Hero() {
           transform: 'translateX(-50%)',
           animation: 'bounce 2s infinite'
         }}>
-          <svg style={{ width: '24px', height: '24px', color: '#C39340' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg style={{ width: '24px', height: '24px', color: '#e6b84f' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>

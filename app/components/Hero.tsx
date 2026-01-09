@@ -123,7 +123,7 @@ export default function Hero() {
         {/* Logo Animation Placeholder */}
         <div className="mb-8 animate-fade-in">
           <div className="inline-block">
-            <div className="w-24 h-24 mx-auto bg-[#C39340] rounded-full flex items-center justify-center mb-6 animate-pulse-slow">
+            <div className="w-24 h-24 mx-auto bg-metallic-gold rounded-full flex items-center justify-center mb-6 animate-pulse-slow">
               <span className="text-[#1F242B] font-bold text-4xl">A</span>
             </div>
           </div>
@@ -133,20 +133,20 @@ export default function Hero() {
           Unlocking Oceanic Wealth — The Future of Gold Harvesting
         </h1>
 
-        <p className="text-xl sm:text-2xl md:text-3xl text-[#C39340] mb-12 max-w-3xl mx-auto animate-slide-up-delay">
+        <p className="text-xl sm:text-2xl md:text-3xl text-metallic-gold mb-12 max-w-3xl mx-auto animate-slide-up-delay">
           The ocean holds 20 million tons of dissolved gold. AurumFlux<sup>®</sup> is how we extract it.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
           <button
             onClick={scrollToTechnology}
-            className="bg-[#C39340] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b38736] transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="btn-metallic-gold px-8 py-4 rounded-full text-lg"
           >
             See How It Works
           </button>
           <button
             onClick={scrollToContact}
-            className="border-2 border-[#C39340] text-[#C39340] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#C39340] hover:text-white transition-all transform hover:scale-105"
+            className="border-2 border-metallic-gold text-metallic-gold px-8 py-4 rounded-full text-lg font-semibold hover:bg-metallic-gold hover:text-[#0b1a2d] transition-all transform hover:scale-105"
           >
             Investor Portal
           </button>
@@ -154,7 +154,7 @@ export default function Hero() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <svg className="w-6 h-6 text-[#C39340]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-6 h-6 text-metallic-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>

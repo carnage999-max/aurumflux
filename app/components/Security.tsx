@@ -37,7 +37,7 @@ export default function Security() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Anti-Theft and Collision Avoidance
           </h2>
-          <div className="w-24 h-1 bg-[#C39340] mx-auto"></div>
+          <div className="w-24 h-1 bg-[#e6b84f] mx-auto"></div>
         </div>
 
         {/* Security Features Grid */}
@@ -45,10 +45,10 @@ export default function Security() {
           {securityFeatures.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#284155] rounded-xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all border-l-4 border-[#C39340]"
+              className="bg-[#284155] rounded-xl p-8 shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all border-l-4 border-[#e6b84f]"
             >
               <div className="flex items-start space-x-4">
-                <div className="bg-[#C39340] rounded-lg p-3 flex-shrink-0">
+                <div className="bg-[#e6b84f] rounded-lg p-3 flex-shrink-0">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {feature.icon}
                   </svg>
@@ -64,12 +64,12 @@ export default function Security() {
 
         {/* Security Visualization */}
         <div className="bg-[#284155] rounded-2xl p-8 shadow-2xl mb-8">
-          <h3 className="text-2xl font-bold text-[#C39340] mb-6 text-center">Multi-Layer Security Protocol</h3>
+          <h3 className="text-2xl font-bold text-[#e6b84f] mb-6 text-center">Multi-Layer Security Protocol</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Layer 1 */}
             <div className="text-center">
               <div className="bg-[#0D2F44] rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold text-[#C39340]">1</span>
+                <span className="text-3xl font-bold text-[#e6b84f]">1</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">Detection</h4>
               <p className="text-sm text-gray-300">
@@ -80,7 +80,7 @@ export default function Security() {
             {/* Layer 2 */}
             <div className="text-center">
               <div className="bg-[#0D2F44] rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold text-[#C39340]">2</span>
+                <span className="text-3xl font-bold text-[#e6b84f]">2</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">Alert</h4>
               <p className="text-sm text-gray-300">
@@ -91,7 +91,7 @@ export default function Security() {
             {/* Layer 3 */}
             <div className="text-center">
               <div className="bg-[#0D2F44] rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
-                <span className="text-3xl font-bold text-[#C39340]">3</span>
+                <span className="text-3xl font-bold text-[#e6b84f]">3</span>
               </div>
               <h4 className="text-lg font-semibold text-white mb-2">Response</h4>
               <p className="text-sm text-gray-300">
@@ -106,7 +106,7 @@ export default function Security() {
           <div className="aspect-video bg-gradient-to-br from-[#0D2F44] to-[#284155] rounded-xl flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 bg-[url('/images/security-features.jpg')] bg-cover bg-center opacity-60"></div>
             <div className="relative z-10 text-center p-8">
-              <svg className="w-32 h-32 mx-auto text-[#C39340] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-32 h-32 mx-auto text-[#e6b84f] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
               </svg>
               <p className="text-gray-300 font-semibold">Corrosion-Resistant Lockbox & Security Systems</p>
@@ -118,7 +118,7 @@ export default function Security() {
         <div className="text-center">
           <a
             href="#"
-            className="inline-flex items-center bg-[#C39340] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b38736] transition-all transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center bg-[#e6b84f] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4a838] transition-all transform hover:scale-105 shadow-lg"
           >
             View Full Security Protocol
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

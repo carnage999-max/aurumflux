@@ -47,7 +47,7 @@ export default function Technology() {
           <div style={{
             width: '96px',
             height: '4px',
-            background: '#C39340',
+            background: '#e6b84f',
             margin: '0 auto'
           }}></div>
         </div>
@@ -92,15 +92,20 @@ export default function Technology() {
                       padding: '0.75rem',
                       borderRadius: '8px',
                       transition: 'all 0.3s',
-                      background: activeFeature === feature.id ? '#C39340' : '#284155',
-                      color: 'white',
-                      border: 'none',
+                      background: activeFeature === feature.id
+                        ? 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)'
+                        : '#284155',
+                      color: activeFeature === feature.id ? '#0b1a2d' : 'white',
+                      border: activeFeature === feature.id ? '2px solid #b8860b' : 'none',
                       cursor: 'pointer',
                       transform: activeFeature === feature.id ? 'scale(1.05)' : 'scale(1)',
-                      boxShadow: activeFeature === feature.id ? '0 10px 15px -3px rgba(0, 0, 0, 0.3)' : 'none'
+                      boxShadow: activeFeature === feature.id
+                        ? '0 8px 16px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.3), inset 0 -3px 5px rgba(0, 0, 0, 0.3)'
+                        : 'none',
+                      textShadow: activeFeature === feature.id ? '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)' : 'none'
                     }}
                   >
-                    <span style={{ fontSize: '0.875rem', fontWeight: '600' }}>{feature.title}</span>
+                    <span style={{ fontSize: '0.875rem', fontWeight: '700' }}>{feature.title}</span>
                   </button>
                 ))}
               </div>
@@ -122,12 +127,12 @@ export default function Technology() {
                   borderRadius: '12px',
                   padding: '2rem',
                   boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
-                  borderLeft: '4px solid #C39340'
+                  borderLeft: '4px solid #e6b84f'
                 }}>
                   <h3 style={{
                     fontSize: '1.5rem',
                     fontWeight: 'bold',
-                    color: '#C39340',
+                    color: '#e6b84f',
                     marginBottom: '1rem'
                   }}>{feature.title}</h3>
                   <p style={{

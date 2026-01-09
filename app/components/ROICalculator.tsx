@@ -51,13 +51,13 @@ export default function ROICalculator() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
             Investor ROI & Revenue Tool
           </h2>
-          <div className="w-24 h-1 bg-[#C39340] mx-auto"></div>
+          <div className="w-24 h-1 bg-[#e6b84f] mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Calculator Inputs */}
           <div className="bg-[#284155] rounded-2xl p-8 shadow-2xl">
-            <h3 className="text-2xl font-bold text-[#C39340] mb-6">Calculate Your Returns</h3>
+            <h3 className="text-2xl font-bold text-[#e6b84f] mb-6">Calculate Your Returns</h3>
 
             {/* Unit Cost */}
             <div className="mb-6">
@@ -68,7 +68,7 @@ export default function ROICalculator() {
                 type="number"
                 value={unitCost}
                 onChange={(e) => setUnitCost(Number(e.target.value))}
-                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C39340]"
+                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e6b84f]"
               />
               <input
                 type="range"
@@ -77,7 +77,7 @@ export default function ROICalculator() {
                 step="50000"
                 value={unitCost}
                 onChange={(e) => setUnitCost(Number(e.target.value))}
-                className="w-full mt-2 accent-[#C39340]"
+                className="w-full mt-2 accent-[#e6b84f]"
               />
             </div>
 
@@ -90,7 +90,7 @@ export default function ROICalculator() {
                 type="number"
                 value={concentration}
                 onChange={(e) => setConcentration(Number(e.target.value))}
-                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C39340]"
+                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e6b84f]"
               />
               <input
                 type="range"
@@ -99,7 +99,7 @@ export default function ROICalculator() {
                 step="1"
                 value={concentration}
                 onChange={(e) => setConcentration(Number(e.target.value))}
-                className="w-full mt-2 accent-[#C39340]"
+                className="w-full mt-2 accent-[#e6b84f]"
               />
             </div>
 
@@ -112,7 +112,7 @@ export default function ROICalculator() {
                 type="number"
                 value={deploymentDays}
                 onChange={(e) => setDeploymentDays(Number(e.target.value))}
-                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C39340]"
+                className="w-full bg-[#0D2F44] text-white px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#e6b84f]"
               />
               <input
                 type="range"
@@ -121,14 +121,14 @@ export default function ROICalculator() {
                 step="30"
                 value={deploymentDays}
                 onChange={(e) => setDeploymentDays(Number(e.target.value))}
-                className="w-full mt-2 accent-[#C39340]"
+                className="w-full mt-2 accent-[#e6b84f]"
               />
             </div>
           </div>
 
           {/* Results Display */}
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-[#C39340] to-[#b38736] rounded-2xl p-8 shadow-2xl">
+            <div className="bg-gradient-to-br from-[#e6b84f] to-[#d4a838] rounded-2xl p-8 shadow-2xl">
               <h3 className="text-2xl font-bold text-white mb-6">Projected Returns</h3>
 
               <div className="space-y-4">
@@ -161,7 +161,7 @@ export default function ROICalculator() {
             </div>
 
             {/* Example Display */}
-            <div className="bg-[#284155] rounded-xl p-6 border-l-4 border-[#C39340]">
+            <div className="bg-[#284155] rounded-xl p-6 border-l-4 border-[#e6b84f]">
               <p className="text-gray-300 text-sm mb-2">Example Scenario:</p>
               <p className="text-white font-semibold">
                 $700k unit = breakeven in 5 months at 15g/day recovery
@@ -171,7 +171,7 @@ export default function ROICalculator() {
             {/* CTA Button */}
             <button
               onClick={scrollToContact}
-              className="w-full bg-[#C39340] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#b38736] transition-all transform hover:scale-105 shadow-lg"
+              className="w-full bg-[#e6b84f] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4a838] transition-all transform hover:scale-105 shadow-lg"
             >
               Schedule a Strategy Call
             </button>

@@ -24,3 +24,80 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* Metallic Gold Button Styles */
+.btn-metallic-gold {
+  position: relative;
+  background: radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%);
+  color: #0b1a2d;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.btn-metallic-gold:hover {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+.btn-metallic-gold:active {
+  transform: scale(0.98);
+  box-shadow: inset 0 6px 10px rgba(0,0,0,0.4);
+}
+
+/* Metallic Gold Text/Accent Color */
+.text-metallic-gold {
+  color: #e6b84f;
+}
+
+.border-metallic-gold {
+  border-color: #e6b84f;
+}
+
+.bg-metallic-gold {
+  background: radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%);
+}
+
+/* Metallic Gold Range Sliders */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: #33546D;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 -2px 3px rgba(0, 0, 0, 0.3);
+  border: 2px solid #b8860b;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3), inset 0 -2px 3px rgba(0, 0, 0, 0.3);
+  border: 2px solid #b8860b;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+}

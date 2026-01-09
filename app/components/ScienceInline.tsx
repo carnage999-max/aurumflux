@@ -12,11 +12,11 @@ export default function Science() {
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>
             Validated Science and Engineering
           </h2>
-          <div style={{ width: '96px', height: '4px', background: '#C39340', margin: '0 auto' }}></div>
+          <div style={{ width: '96px', height: '4px', background: '#e6b84f', margin: '0 auto' }}></div>
         </div>
 
         <div style={{ marginBottom: '4rem' }}>
-          <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#C39340', marginBottom: '2rem', textAlign: 'center' }}>
+          <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '2rem', textAlign: 'center' }}>
             Gold Ion Concentrations in Hot Zones
           </h3>
           <div style={{ background: '#284155', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>
@@ -24,9 +24,9 @@ export default function Science() {
               <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '600px' }}>
                 <thead style={{ background: '#0D2F44' }}>
                   <tr>
-                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#C39340', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Location</th>
-                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#C39340', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Concentration</th>
-                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#C39340', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Optimal Depth</th>
+                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#e6b84f', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Location</th>
+                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#e6b84f', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Concentration</th>
+                    <th style={{ padding: '1rem 1.5rem', textAlign: 'left', fontSize: '0.875rem', fontWeight: '600', color: '#e6b84f', textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>Optimal Depth</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -62,7 +62,7 @@ export default function Science() {
         </div>
 
         <div style={{ textAlign: 'center' }}>
-          <a href="#" style={{ display: 'inline-flex', alignItems: 'center', background: '#C39340', color: 'white', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '600', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', textDecoration: 'none', transition: 'all 0.3s' }} onMouseEnter={(e) => { e.currentTarget.style.background = '#b38736'; e.currentTarget.style.transform = 'scale(1.05)'; }} onMouseLeave={(e) => { e.currentTarget.style.background = '#C39340'; e.currentTarget.style.transform = 'scale(1)'; }}>
+          <a href="#" style={{ display: 'inline-flex', alignItems: 'center', background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', color: '#0b1a2d', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '700', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)', textDecoration: 'none', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.filter = 'brightness(1.05)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(1)'; }}>
             Download Environmental & Recovery Reports
             <svg style={{ width: '20px', height: '20px', marginLeft: '0.5rem' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
