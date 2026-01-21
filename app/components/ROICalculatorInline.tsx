@@ -54,6 +54,24 @@ export default function ROICalculator() {
           <div style={{ width: '96px', height: '4px', background: '#e6b84f', margin: '0 auto' }}></div>
         </div>
 
+        <div style={{ maxWidth: '720px', margin: '0 auto 3rem', background: '#0D2F44', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', borderLeft: '4px solid #e6b84f' }}>
+          <p style={{ fontSize: '1.25rem', fontWeight: '700', color: '#e6b84f', marginBottom: '1rem' }}>
+            A modular ocean remediation and resource recovery platform.
+          </p>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+            {[
+              'Gold as revenue engine',
+              'Microplastics as environmental scale',
+              'Mercury as regulatory and public health solution',
+            ].map((item) => (
+              <li key={item} style={{ color: '#d1d5db', display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e6b84f', marginTop: '0.5rem', flexShrink: 0 }}></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '3rem', alignItems: 'start' }}>
           {/* Calculator Inputs */}
           <div style={{ background: '#284155', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)' }}>

@@ -1,9 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +29,18 @@ export default function Navigation() {
     }
   };
 
+  const handleSectionNav = (id: string) => {
+    if (pathname === '/') {
+      scrollToSection(id);
+      return;
+    }
+    router.push(`/#${id}`);
+  };
+
+  const handleHomeNav = () => {
+    router.push('/');
+  };
+
   return (
     <>
       {/* Desktop Navigation */}
@@ -40,38 +55,45 @@ export default function Navigation() {
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 2rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
             {/* Logo */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <button
+              type="button"
+              onClick={handleHomeNav}
+              style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+            >
               <img src="/images/aurumflux-logo.png" alt="AurumFlux Logo" style={{ width: '50px', height: '50px', objectFit: 'contain' }} />
               <span style={{ fontSize: '24px', fontWeight: 'bold', color: 'white' }}>
                 AurumFlux<sup style={{ fontSize: '12px' }}>®</sup>
               </span>
-            </div>
+            </button>
 
             {/* Desktop Menu */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-              <button onClick={() => scrollToSection('technology')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('technology')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Technology
               </button>
-              <button onClick={() => scrollToSection('science')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('science')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Science
               </button>
-              <button onClick={() => scrollToSection('roi')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('roi')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 ROI Calculator
               </button>
-              <button onClick={() => scrollToSection('environmental')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('environmental')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Environmental
               </button>
-              <button onClick={() => scrollToSection('security')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('security')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Security
               </button>
-              <button onClick={() => scrollToSection('market')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('market')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 Market
               </button>
-              <button onClick={() => scrollToSection('about')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+              <button onClick={() => handleSectionNav('about')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
                 About
               </button>
+              <button onClick={() => router.push('/ocean-remediation')} style={{ color: '#d1d5db', cursor: 'pointer', background: 'none', border: 'none', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'} onMouseLeave={(e) => e.currentTarget.style.color = '#d1d5db'}>
+                Ocean Remediation
+              </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => handleSectionNav('contact')}
                 style={{
                   background: '#e6b84f',
                   color: 'white',
@@ -109,17 +131,21 @@ export default function Navigation() {
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           {/* Logo */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <button
+            type="button"
+            onClick={handleHomeNav}
+            style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
+          >
             <img src="/images/aurumflux-logo.png" alt="AurumFlux Logo" style={{ width: '40px', height: '40px', objectFit: 'contain', flexShrink: 0 }} />
             <span style={{ fontSize: '16px', fontWeight: 'bold', color: 'white', whiteSpace: 'nowrap' }}>
               AurumFlux<sup style={{ fontSize: '9px' }}>®</sup>
             </span>
-          </div>
+          </button>
 
           {/* Inline Tabs - Technology and About */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap', justifyContent: 'flex-end' }}>
             <button
-              onClick={() => scrollToSection('technology')}
+              onClick={() => handleSectionNav('technology')}
               style={{
                 padding: '6px 12px',
                 background: '#284155',
@@ -134,7 +160,7 @@ export default function Navigation() {
               Technology
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => handleSectionNav('about')}
               style={{
                 padding: '6px 12px',
                 background: '#284155',
@@ -147,6 +173,21 @@ export default function Navigation() {
               }}
             >
               About
+            </button>
+            <button
+              onClick={() => router.push('/ocean-remediation')}
+              style={{
+                padding: '6px 12px',
+                background: '#284155',
+                color: 'white',
+                borderRadius: '9999px',
+                border: 'none',
+                fontSize: '12px',
+                whiteSpace: 'nowrap',
+                cursor: 'pointer'
+              }}
+            >
+              Ocean Remediation
             </button>
           </div>
         </div>

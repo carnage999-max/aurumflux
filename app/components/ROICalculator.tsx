@@ -54,6 +54,17 @@ export default function ROICalculator() {
           <div className="w-24 h-1 bg-[#e6b84f] mx-auto"></div>
         </div>
 
+        <div className="max-w-3xl mx-auto mb-12 bg-[#0D2F44] rounded-2xl p-8 shadow-2xl border-l-4 border-[#e6b84f]">
+          <p className="text-xl font-bold text-[#e6b84f] mb-4">
+            A modular ocean remediation and resource recovery platform.
+          </p>
+          <ul className="space-y-3 text-gray-300">
+            <li>Gold as revenue engine</li>
+            <li>Microplastics as environmental scale</li>
+            <li>Mercury as regulatory and public health solution</li>
+          </ul>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Calculator Inputs */}
           <div className="bg-[#284155] rounded-2xl p-8 shadow-2xl">

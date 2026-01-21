@@ -79,10 +79,22 @@ export default function Environmental() {
           </div>
         </div>
 
+        <div className="bg-[#0D2F44] rounded-2xl p-8 shadow-2xl mb-8 border-l-4 border-[#e6b84f]">
+          <h3 className="text-2xl font-bold text-[#e6b84f] mb-4">FAQ / Disclaimer</h3>
+          <div className="text-gray-300 space-y-3">
+            <p>
+              <span className="text-white font-semibold">Q:</span> Does Aureum use mercury to extract gold?
+            </p>
+            <p>
+              <span className="text-white font-semibold">A:</span> No. Aureum does not use mercury or toxic binding agents in gold recovery. Any mercury captured is permanently stabilized and removed from the environment.
+            </p>
+          </div>
+        </div>
+
         {/* CTA Button */}
         <div className="text-center">
           <a
-            href="#"
+            href="/regulatory-compliance"
             className="inline-flex items-center bg-[#e6b84f] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#d4a838] transition-all transform hover:scale-105 shadow-lg"
           >
             View Environmental Addendum

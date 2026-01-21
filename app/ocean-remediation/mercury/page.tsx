@@ -1,0 +1,72 @@
+import Navigation from '../../components/Navigation';
+
+const moduleSections = [
+  {
+    title: 'Problem Statement',
+    body: 'Mercury as a global neurotoxin.',
+  },
+  {
+    title: 'Solution',
+    body: 'Sealed adsorption pods using sulfur or thiol chemistry.',
+  },
+  {
+    title: 'Public Health Impact',
+    body: 'Fisheries protection and toxin reduction.',
+  },
+];
+
+const safetyItems = ['Tamper resistance', 'Chain-of-custody', 'Licensed processing'];
+
+export default function MercuryPage() {
+  return (
+    <div style={{ position: 'relative', width: '100%', overflowX: 'hidden' }}>
+      <Navigation />
+
+      <section style={{ position: 'relative', background: '#0D2F44', padding: '8rem 0 6rem' }}>
+        <div style={{ maxWidth: '960px', margin: '0 auto', padding: '0 1rem', textAlign: 'center' }}>
+          <h1 style={{ fontSize: 'clamp(2.25rem, 5vw, 4rem)', fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>
+            Mercury Capture Module
+          </h1>
+          <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.5rem)', color: '#e6b84f' }}>
+            Sealed, adsorption-based
+          </p>
+        </div>
+
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: 'auto', display: 'block' }}>
+            <path d="M1440 0L0 120H1440V0Z" fill="#284155"/>
+          </svg>
+        </div>
+      </section>
+
+      <section style={{ position: 'relative', background: '#284155', padding: '5rem 0 7rem' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 1rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem' }}>
+          {moduleSections.map((section) => (
+            <div key={section.title} style={{ background: '#0D2F44', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)', borderLeft: '4px solid #e6b84f' }}>
+              <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '0.75rem' }}>{section.title}</h2>
+              <p style={{ color: '#d1d5db', lineHeight: '1.6' }}>{section.body}</p>
+            </div>
+          ))}
+
+          <div style={{ background: '#0D2F44', borderRadius: '12px', padding: '2rem', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)', borderLeft: '4px solid #e6b84f' }}>
+            <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1rem' }}>Safety & Compliance</h2>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              {safetyItems.map((item) => (
+                <li key={item} style={{ color: '#d1d5db', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#e6b84f', display: 'inline-block' }}></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0 }}>
+          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: 'auto', display: 'block' }}>
+            <path d="M0 120L1440 0V120H0Z" fill="#1F242B"/>
+          </svg>
+        </div>
+      </section>
+    </div>
+  );
+}

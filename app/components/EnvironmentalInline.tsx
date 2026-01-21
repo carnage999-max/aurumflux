@@ -72,10 +72,23 @@ export default function Environmental() {
           </div>
         </div>
 
+        {/* FAQ / Disclaimer */}
+        <div style={{ background: '#0D2F44', borderRadius: '16px', padding: '2rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', marginBottom: '2rem', borderLeft: '4px solid #e6b84f' }}>
+          <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#e6b84f', marginBottom: '1rem' }}>FAQ / Disclaimer</h3>
+          <div style={{ color: '#d1d5db', lineHeight: '1.7' }}>
+            <p style={{ marginBottom: '0.75rem' }}>
+              <strong style={{ color: 'white' }}>Q:</strong> Does Aureum use mercury to extract gold?
+            </p>
+            <p>
+              <strong style={{ color: 'white' }}>A:</strong> No. Aureum does not use mercury or toxic binding agents in gold recovery. Any mercury captured is permanently stabilized and removed from the environment.
+            </p>
+          </div>
+        </div>
+
         {/* CTA Button */}
         <div style={{ textAlign: 'center' }}>
           <a
-            href="#"
+            href="/regulatory-compliance"
             style={{ display: 'inline-flex', alignItems: 'center', background: 'radial-gradient(circle at 30% 30%, #fff2b8 0%, #f7d774 20%, #e6b84f 45%, #ffd778 65%, #b8860b 100%)', color: '#0b1a2d', padding: '1rem 2rem', borderRadius: '9999px', fontSize: '1.125rem', fontWeight: '700', boxShadow: '0 12px 20px rgba(0, 0, 0, 0.35), 0 4px 6px rgba(0, 0, 0, 0.25), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -4px 6px rgba(0, 0, 0, 0.35)', textShadow: '0 1px 1px rgba(255, 255, 255, 0.3), 0 -1px 1px rgba(0, 0, 0, 0.6)', textDecoration: 'none', transition: 'all 0.3s ease' }}
             onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.04)'; e.currentTarget.style.filter = 'brightness(1.05)'; }}
             onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(1)'; }}
