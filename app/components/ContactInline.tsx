@@ -251,6 +251,20 @@ export default function Contact() {
                 Terms of Service
               </a>
             </div>
+            <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
+              Part of the{" "}
+              <a
+                href="https://se7eninc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#9ca3af', textDecoration: 'underline', transition: 'color 0.3s' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#e6b84f'}
+                onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}
+              >
+                Se7en
+              </a>{" "}
+              family of companies.
+            </p>
           </div>
         </div>
       </div>
